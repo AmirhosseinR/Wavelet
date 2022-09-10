@@ -1,0 +1,2 @@
+{Name=<uma_periph_advance>, Type=<hps_trigger>, Dir=<OUT>} TO {Name=<emif_clk>, Type=<hps_trigger>, Dir=<IN>} : PASSED
+{Name=<uma_periph_advance>, Type=<hps_trigger>, Dir=<OUT>} TO {Name=<emif_clk>, Type=<hps_trigger>, Dir=<IN>} : PASSED

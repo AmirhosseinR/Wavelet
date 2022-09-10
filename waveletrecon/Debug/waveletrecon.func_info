@@ -1,0 +1,16 @@
+$decommn.asm:69:228$#decommn.asm#0x415ec#0x4165f
+$reconmn.asm:66:226$#reconmn.asm#0x4165f#0x416d0
+$vectors.asm:67:69$#vectors.asm#0x41a0b#0x41a0d
+$waveletdecom.asm:19:128$#waveletdecom.asm#0x41811#0x41877
+$waveletrecon.asm:20:161$#waveletrecon.asm#0x41877#0x41913
+$ASM$#decinplcemn.asm#0x41c59#0x41cde
+$ASM$#recinplcemn.asm#0x41cde#0x41d88
+__args_main#args_main.c#0x41a1f#0x41a5b
+_auto_init#autoinit.asm#0x41a5b#0x41abd
+_c_int00#boot.asm#0x41913#0x4194e
+__register_lock#_lock.c#0x41a15#0x41a1d
+__register_unlock#_lock.c#0x41a0d#0x41a15
+_abort#exit.c#0x41a04#0x41a0b
+_atexit#exit.c#0x419ae#0x41a04
+_exit#exit.c#0x4194e#0x419ae
+_main#test.c#0x416d0#0x41811

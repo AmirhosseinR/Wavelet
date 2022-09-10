@@ -1,0 +1,43 @@
+--------------------------  waveletrecon.pjt - Debug  --------------------------
+[decommn.asm] "C:\CCStudio_v3.3\C5500\cgtools\bin\cl55" -g -fr"C:/CCStudio_v3.3/MyProjects/waveletrecon/Debug" -i"C:/CCStudio_v3.3/C5500/imglib/include" -d"_DEBUG" -ml -v5510:2 -@"Debug.lkf" "decommn.asm"
+"decommn.asm", REMARK   at line 117: [R5688] A localrepeat may be corrupted when
+                                             C54CM == 1 (see the C55x silicon
+                                             exceptions errata; Advisory
+                                             CPU_85)
+		RPTBLOCAL	loop1-1				; port of RPTBLOCAL  loop1-1        
+
+
+[reconmn.asm] "C:\CCStudio_v3.3\C5500\cgtools\bin\cl55" -g -fr"C:/CCStudio_v3.3/MyProjects/waveletrecon/Debug" -i"C:/CCStudio_v3.3/C5500/imglib/include" -d"_DEBUG" -ml -v5510:2 -@"Debug.lkf" "reconmn.asm"
+"reconmn.asm", REMARK   at line 116: [R5688] A localrepeat may be corrupted when
+                                             C54CM == 1 (see the C55x silicon
+                                             exceptions errata; Advisory
+                                             CPU_85)
+		RPTBLOCAL	loop1-1				; port of RPTBLOCAL  loop1-1        
+
+
+[test.c] "C:\CCStudio_v3.3\C5500\cgtools\bin\cl55" -g -fr"C:/CCStudio_v3.3/MyProjects/waveletrecon/Debug" -i"C:/CCStudio_v3.3/C5500/imglib/include" -d"_DEBUG" -ml -v5510:2 -@"Debug.lkf" "test.c"
+"C:/CCStudio_v3.3/C5500/imglib/include/wavelet.h", line 17: warning: integer conversion resulted in a change of sign
+
+[waveletdecom.asm] "C:\CCStudio_v3.3\C5500\cgtools\bin\cl55" -g -fr"C:/CCStudio_v3.3/MyProjects/waveletrecon/Debug" -i"C:/CCStudio_v3.3/C5500/imglib/include" -d"_DEBUG" -ml -v5510:2 -@"Debug.lkf" "waveletdecom.asm"
+"waveletdecom.asm", REMARK   at line 63: [R5688] A localrepeat may be corrupted
+                                                 when C54CM == 1 (see the C55x
+                                                 silicon exceptions errata;
+                                                 Advisory CPU_85)
+		RPTBLOCAL	LOOP-1; port of RPTBLOCAL  LOOP-1
+
+
+[waveletrecon.asm] "C:\CCStudio_v3.3\C5500\cgtools\bin\cl55" -g -fr"C:/CCStudio_v3.3/MyProjects/waveletrecon/Debug" -i"C:/CCStudio_v3.3/C5500/imglib/include" -d"_DEBUG" -ml -v5510:2 -@"Debug.lkf" "waveletrecon.asm"
+"waveletrecon.asm", REMARK   at line 72: [R5688] A localrepeat may be corrupted
+                                                 when C54CM == 1 (see the C55x
+                                                 silicon exceptions errata;
+                                                 Advisory CPU_85)
+		RPTBLOCAL	LOOP-1; port of RPTBLOCAL  LOOP-1
+
+
+[Linking...] "C:\CCStudio_v3.3\C5500\cgtools\bin\cl55" -@"Debug.lkf"
+<Linking>
+>> warning: creating output section vectors without SECTIONS specification
+>> warning: '.sysmem' section not found -- ignoring '-heap <size>' option.
+
+Build Complete,
+  0 Errors, 3 Warnings, 4 Remarks.

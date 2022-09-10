@@ -1,0 +1,334 @@
+******************************************************************************
+         TMS320C55x COFF Linker PC v3.3.2                      
+******************************************************************************
+>> Linked Wed Aug 04 16:45:05 2010
+
+OUTPUT FILE NAME:   <./Debug/waveletrecon.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00041913
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+                        (bytes)   (bytes)    (bytes)   (bytes)
+----------------------  --------  ---------  --------  --------  ----  --------
+PAGE 0:
+  MMR                   00000000   000000c0  00000000  000000c0  RWIX
+  DARAM0                000000c0   0000ff40  0000369c  0000c8a4  RWIX
+  SARAM0                00010000   00010000  00000000  00010000  RWIX
+  SARAM1                00020000   00020000  00000000  00020000  RWIX
+  SARAM2                00040000   00010000  00001d89  0000e277  RWIX
+  SDRAM                 00050000   00100000  00000000  00100000  RWIX
+  FLASH                 00400000   00200000  00000000  00200000  R  X
+  CPLD                  00600000   00200000  00000000  00200000  R  X
+
+PAGE 2:
+  IOPORT                00000000   00020000  00000000  00020000  RWI 
+
+
+SECTION ALLOCATION MAP
+(Addresses surrounded by []'s are displayed for convenience only!)
+
+output                                                          attributes/
+section   page  orgn(bytes) orgn(words) len(bytes) len(words)   input sections
+--------  ----  ----------- ----------- ---------- ----------   --------------
+.data        0   [ 000000c0 ]  00000060          *   00000000   UNINITIALIZED
+
+.rtdx_data 
+*            0   [ 000000c0 ]  00000060          *   00000000   UNINITIALIZED
+
+.sysmem      0   [ 000000c0 ]  00000060          *   00000000   UNINITIALIZED
+
+.cio         0   [ 000000c0 ]  00000060          *   00000000   UNINITIALIZED
+
+.bss         0   [ 000000c0 ]  00000060          *   00000ace   
+                 [ 000000c0 ]  00000060          *   00000a84   test.obj (.bss) [fill = beef]
+                 [ 000015c8 ]  00000ae4          *   00000046   rts55x.lib : exit.obj (.bss) [fill = beef]
+                 [ 00001654 ]  00000b2a          *   00000004              : _lock.obj (.bss) [fill = beef]
+
+.stack       0   [ 0000165c ]  00000b2e          *   00000800   
+                 [ 0000165c ]  00000b2e          *   00000800   --HOLE-- [fill = beef]
+
+.sysstack 
+*            0   [ 0000265c ]  0000132e          *   00000800   
+                 [ 0000265c ]  0000132e          *   00000800   --HOLE-- [fill = beef]
+
+vectors      0     00003660  [ 00001b30 ] 00000100          *   
+                   00003660  [ 00001b30 ] 00000100          *   rts55x.lib : vectors.obj (vectors)
+
+.intvecs     0   [ 00040000 ]  00020000          *   00000000   UNINITIALIZED
+
+.rtdx_text 
+*            0   [ 00040000 ]  00020000          *   00000000   UNINITIALIZED
+
+.switch      0   [ 00040000 ]  00020000          *   00000000   UNINITIALIZED
+
+.const       0   [ 00040000 ]  00020000          *   00000000   UNINITIALIZED
+
+.pinit       0   [ 00040000 ]  00020000          *   00000000   UNINITIALIZED
+
+.cinit       0   [ 00040000 ]  00020000          *   00000af6   
+                 [ 00040000 ]  00020000          *   00000add   test.obj (.cinit)
+                 [ 000415ba ]  00020add          *   0000000e   rts55x.lib : exit.obj (.cinit)
+                 [ 000415d6 ]  00020aeb          *   0000000a              : _lock.obj (.cinit)
+                 [ 000415ea ]  00020af5          *   00000001   --HOLE-- [fill = 0]
+
+.text        0     000415ec  [ 00020af6 ] 0000079d          *   
+                   000415ec  [ 00020af6 ] 00000073          *   decommn.obj (.text)
+                   0004165f  [ 00020b2f+] 00000071          *   reconmn.obj (.text)
+                   000416d0  [ 00020b68 ] 00000141          *   test.obj (.text)
+                   00041811  [ 00020c08+] 00000066          *   waveletdecom.obj (.text)
+                   00041877  [ 00020c3b+] 0000009c          *   waveletrecon.obj (.text)
+                   00041913  [ 00020c89+] 0000003b          *   rts55x.lib : boot.obj (.text)
+                   0004194e  [ 00020ca7 ] 000000b6          *              : exit.obj (.text)
+                   00041a04  [ 00020d02 ] 00000007          *              : exit.obj (.text:CIO_breakpoint)
+                   00041a0b  [ 00020d05+] 00000002          *              : vectors.obj (.text)
+                   00041a0d  [ 00020d06+] 00000012          *              : _lock.obj (.text)
+                   00041a1f  [ 00020d0f+] 0000003c          *              : args_main.obj (.text)
+                   00041a5b  [ 00020d2d+] 00000062          *              : autoinit.obj (.text)
+                   00041abd  [ 00020d5e+] 0000019c          *   55ximagex.lib : 1ddwtdsp.obj (.text)
+                   00041c59  [ 00020e2c+] 00000085          *                 : decinplcemn.obj (.text)
+                   00041cde  [ 00020e6f ] 000000aa          *                 : recinplcemn.obj (.text)
+                   00041d88  [ 00020ec4 ] 00000001          *   --HOLE-- [fill = 20]
+
+.ioport      2   [ 00000000 ]  00000000          *   00000000   UNINITIALIZED
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+abs. value/
+byte addr   word addr   name
+---------   ---------   ----
+00000002                $TI_capability$C5500$MemoryModel
+00000001                $TI_capability_requires_rev2
+            00000060    .bss
+            00000060    .data
+000415ec                .text
+00041a05                C$$EXIT
+00041abd                _IMG_wave_decom_one_dim
+00041b01                _IMG_wave_recon_one_dim
+00041b53                _IMG_wavep_decom_one_dim
+00041bca                _IMG_wavep_recon_one_dim
+fdffffef                _RTDX_interrupt_mask
+00003660                _Reset
+00001000                __STACK_SIZE
+00001000                __SYSSTACK_SIZE
+ffffffff                ___binit__
+            00000060    ___bss__
+ffffffff                ___c_args__
+            00020000    ___cinit__
+            00000060    ___data__
+            00000060    ___edata__
+            00000b2e    ___end__
+00041d89                ___etext__
+ffffffff                ___pinit__
+000415ec                ___text__
+00041a1f                __args_main
+            00000b26    __cleanup_ptr
+            00000b28    __dtors_ptr
+            00000b2a    __lock
+00041a1d                __nop
+00041a15                __register_lock
+00041a0d                __register_unlock
+            00000b2e    __stack
+            0000132e    __sysstack
+            00000b2c    __unlock
+00041a04                _abort
+000419ae                _atexit
+00041a5b                _auto_init
+            00000060    _bior13
+            00000079    _bior15
+            000000a2    _bior22
+            000000bb    _bior24
+            000000e4    _bior26
+            0000011d    _bior28
+            00000166    _bior31
+            00000177    _bior33
+            00000198    _bior35
+            000001c9    _bior37
+            0000020a    _bior39
+            0000025b    _bior44
+            00000284    _bior55
+            000002b5    _bior68
+00041913                _c_int00
+            000002fe    _coif1
+            00000317    _coif2
+            00000348    _coif3
+            00000391    _coif4
+            000003f2    _coif5
+            000005d3    _db10
+            0000046b    _db2
+            0000047c    _db3
+            00000495    _db4
+            000004b6    _db5
+            000004df    _db6
+            00000510    _db7
+            00000549    _db8
+            0000058a    _db9
+00041c59                _decomInplace
+0004194e                _exit
+            00000a7b    _h_gDecom
+            00000a83    _h_gRecon
+            00000a9b    _i
+            00000a8b    _input
+000416d0                _main
+            00000624    _rbio13
+            0000063d    _rbio15
+            00000666    _rbio22
+            0000067f    _rbio24
+            000006a8    _rbio26
+            000006e1    _rbio28
+            0000072a    _rbio31
+            0000073b    _rbio33
+            0000075c    _rbio35
+            0000078d    _rbio37
+            000007ce    _rbio39
+            0000081f    _rbio44
+            00000848    _rbio55
+            00000879    _rbio68
+00041cde                _reconInplace
+            00000aac    _signal
+            00000a2a    _sym10
+            000008c2    _sym2
+            000008d3    _sym3
+            000008ec    _sym4
+            0000090d    _sym5
+            00000936    _sym6
+            00000967    _sym7
+            000009a0    _sym8
+            000009e1    _sym9
+            00000acc    _temp_wksp
+00041811                _waveletdecom
+00041877                _waveletrecon
+            00000a9c    _x
+            00000adc    _xbuffer1
+            00000ae0    _xbuffer2
+            00000ac4    _y_high
+            00000abc    _y_low
+ffffffff                binit
+            00020000    cinit
+            00000060    edata
+            00000b2e    end
+00041d89                etext
+ffffffff                pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+abs. value/
+byte addr   word addr   name
+---------   ---------   ----
+00000001                $TI_capability_requires_rev2
+00000002                $TI_capability$C5500$MemoryModel
+            00000060    ___bss__
+            00000060    ___data__
+            00000060    ___edata__
+            00000060    _bior13
+            00000060    .data
+            00000060    .bss
+            00000060    edata
+            00000079    _bior15
+            000000a2    _bior22
+            000000bb    _bior24
+            000000e4    _bior26
+            0000011d    _bior28
+            00000166    _bior31
+            00000177    _bior33
+            00000198    _bior35
+            000001c9    _bior37
+            0000020a    _bior39
+            0000025b    _bior44
+            00000284    _bior55
+            000002b5    _bior68
+            000002fe    _coif1
+            00000317    _coif2
+            00000348    _coif3
+            00000391    _coif4
+            000003f2    _coif5
+            0000046b    _db2
+            0000047c    _db3
+            00000495    _db4
+            000004b6    _db5
+            000004df    _db6
+            00000510    _db7
+            00000549    _db8
+            0000058a    _db9
+            000005d3    _db10
+            00000624    _rbio13
+            0000063d    _rbio15
+            00000666    _rbio22
+            0000067f    _rbio24
+            000006a8    _rbio26
+            000006e1    _rbio28
+            0000072a    _rbio31
+            0000073b    _rbio33
+            0000075c    _rbio35
+            0000078d    _rbio37
+            000007ce    _rbio39
+00001000                __STACK_SIZE
+00001000                __SYSSTACK_SIZE
+            0000081f    _rbio44
+            00000848    _rbio55
+            00000879    _rbio68
+            000008c2    _sym2
+            000008d3    _sym3
+            000008ec    _sym4
+            0000090d    _sym5
+            00000936    _sym6
+            00000967    _sym7
+            000009a0    _sym8
+            000009e1    _sym9
+            00000a2a    _sym10
+            00000a7b    _h_gDecom
+            00000a83    _h_gRecon
+            00000a8b    _input
+            00000a9b    _i
+            00000a9c    _x
+            00000aac    _signal
+            00000abc    _y_low
+            00000ac4    _y_high
+            00000acc    _temp_wksp
+            00000adc    _xbuffer1
+            00000ae0    _xbuffer2
+            00000b26    __cleanup_ptr
+            00000b28    __dtors_ptr
+            00000b2a    __lock
+            00000b2c    __unlock
+            00000b2e    ___end__
+            00000b2e    __stack
+            00000b2e    end
+            0000132e    __sysstack
+00003660                _Reset
+            00020000    cinit
+            00020000    ___cinit__
+000415ec                .text
+000415ec                ___text__
+000416d0                _main
+00041811                _waveletdecom
+00041877                _waveletrecon
+00041913                _c_int00
+0004194e                _exit
+000419ae                _atexit
+00041a04                _abort
+00041a05                C$$EXIT
+00041a0d                __register_unlock
+00041a15                __register_lock
+00041a1d                __nop
+00041a1f                __args_main
+00041a5b                _auto_init
+00041abd                _IMG_wave_decom_one_dim
+00041b01                _IMG_wave_recon_one_dim
+00041b53                _IMG_wavep_decom_one_dim
+00041bca                _IMG_wavep_recon_one_dim
+00041c59                _decomInplace
+00041cde                _reconInplace
+00041d89                ___etext__
+00041d89                etext
+fdffffef                _RTDX_interrupt_mask
+ffffffff                pinit
+ffffffff                ___c_args__
+ffffffff                ___pinit__
+ffffffff                binit
+ffffffff                ___binit__
+
+[112 symbols]

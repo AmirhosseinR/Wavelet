@@ -1,0 +1,41 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="C:\CCStudio_v3.3\MyProjects\waveletrecon\"
+ProjectType=Executable
+CPUFamily=TMS320C55XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="..\..\C5500\cgtools\lib\rts55x.lib"
+Source="..\..\C5500\imglib\55ximagex.lib"
+Source="decommn.asm"
+Source="reconmn.asm"
+Source="test.c"
+Source="waveletdecom.asm"
+Source="waveletrecon.asm"
+Source="dsk5510x.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -fr"$(Proj_dir)\Debug" -i"C:\CCStudio_v3.3\C5500\imglib\include" -d"_DEBUG" -ml -v5510:2
+
+["Compiler" Settings: "Release"]
+Options=-o2 -fr"$(Proj_dir)\Release"
+
+["Linker" Settings: "Debug"]
+Options=-q -c -m".\Debug\waveletrecon.map" -o".\Debug\waveletrecon.out" -w -x -i"C:\CCStudio_v3.3\C5500\imglib\include"
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\waveletrecon.map" -o".\Release\waveletrecon.out" -w -x
+
+["dsk5510x.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["dsk5510x.cmd" Settings: "Release"]
+LinkOrder=1
+
